@@ -38,7 +38,7 @@ public class AStern implements GraphSearch {
 			this.goal = this.pSearchGraph.getVertex(i);
 		
 		//finds the start vertex
-		
+		//test this is a test
 		i=0;
 		while(!(this.pSearchGraph.getVertex(i).getAttribute("isStart") != null)){
 			
