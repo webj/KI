@@ -34,11 +34,11 @@ public class AStern implements GraphSearch {
 		
 		int i=0;
 		
+		//searchs the goal vertex
 		while(!(this.pSearchGraph.getVertex(i).getAttribute("isGoal") != null))			
 			this.goal = this.pSearchGraph.getVertex(i);
 		
 		//finds the start vertex
-		//test this is a test
 		i=0;
 		while(!(this.pSearchGraph.getVertex(i).getAttribute("isStart") != null)){
 			
@@ -68,6 +68,61 @@ public class AStern implements GraphSearch {
 		}	
 		
 
+	}
+	
+	public ArrayList<Vertex> successor(Vertex predecessor){
+		
+		ArrayList<Vertex> M = new ArrayList<Vertex>();
+		
+		for(Vertex v: this.pSearchGraph.getVerticesArray()){
+			
+			if(n.hasEdgeTo(v)){
+				
+				if(this.closed.contains(v))
+					continue;
+				
+				
+				
+			}
+				
+		}
+		
+	}
+	
+	
+	/**
+	 * Calculates the g function for the distance from the predecessor to the current selected vertex. It's uses the euklidian distance.
+	 * @param successor vertex of the predecessor	
+	 * @param predecessor vertex 
+	 * @return distance between successor and predecessor
+	 */
+	public float g(Vertex successor, Vertex predecessor){
+		
+		Float xpredecessor = (Float) predecessor.getAttribute("x");
+		Float ypredecessor = (Float) predecessor.getAttribute("y");
+		
+		Float xv = (Float) successor.getAttribute("x");
+		Float yv = (Float) successor.getAttribute("y");
+		
+		return (float)((Float) predecessor.getAttribute("cost")+(float) Math.sqrt((Math.pow((xpredecessor - xv), 2) + Math.pow((ypredecessor-yv), 2))));
+		
+	}
+	/**
+	 * Calculates a function for the distance from the the current selected vertex to the goal vertex. It's uses the euklidian distance.
+	 * @param v vertex for calculating the distance to the goal
+	 * @param predecessor vertex 
+	 * @return distance between current vertex and goal
+	 */
+	public float h(Vertex v){
+		
+		Float xv = (Float) v.getAttribute("x");
+		Float yv = (Float) v.getAttribute("y");
+		
+		Float xgoal = (Float) this.goal.getAttribute("x");
+		Float ygoal = (Float) this.goal.getAttribute("y");
+		
+		return (float) Math.sqrt((Math.pow((xv-xgoal), 2) + Math.pow((yv-ygoal), 2)));
+		
 	}
 
 	@Override

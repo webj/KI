@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- ch.unibe.iam.graph.io.GxlWriter, 2011-10-14 13:52:10 -->
+<!-- ch.unibe.iam.graph.io.GxlWriter, 2011-10-15 11:18:48 -->
 <!DOCTYPE gxl SYSTEM "gxl1.0.dtd">
 <gxl>
 <graph id="default_id" edgemode="directed">
@@ -13,7 +13,7 @@
 </node>
 <node id="_1">
 <attr name="color">
-<string>blue</string>
+<int>-16724992</int>
 </attr>
 </node>
 <node id="_2">
@@ -21,7 +21,12 @@
 <string>green</string>
 </attr>
 </node>
-<edge id="_3" from="_0" to="_2">
+<node id="_3">
+<attr name="color">
+<string>green</string>
+</attr>
+</node>
+<edge id="_4" from="_0" to="_2">
 <attr name="gewicht">
 <float>4.0</float>
 </attr>
@@ -29,7 +34,7 @@
 <string>edge from v1 to v3</string>
 </attr>
 </edge>
-<edge id="_4" from="_0" to="_1">
+<edge id="_5" from="_0" to="_1">
 <attr name="gewicht">
 <float>3.0</float>
 </attr>
@@ -37,7 +42,7 @@
 <string>edge from v1 to v2</string>
 </attr>
 </edge>
-<edge id="_5" from="_1" to="_2">
+<edge id="_6" from="_1" to="_2">
 <attr name="gewicht">
 <float>2.0</float>
 </attr>
@@ -45,5 +50,6 @@
 <string>edge from v2 to v3</string>
 </attr>
 </edge>
+<edge id="_7" from="_2" to="_3"/>
 </graph>
 </gxl>

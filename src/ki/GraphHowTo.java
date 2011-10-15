@@ -47,11 +47,11 @@ public class GraphHowTo {
     /*
      * Knoten einf�gen...
      */
-    Vertex v1, v2, v3;
+    Vertex v1, v2, v3, v4;
     v1 = directedGraph.addVertex();
     v2 = directedGraph.addVertex();
     v3 = directedGraph.addVertex();
-
+    v4 = directedGraph.addVertex();
     /*
      * Einfache Abfrage der Graphen
      */
@@ -73,6 +73,9 @@ public class GraphHowTo {
     v1.setAttribute("area", new Double(2.0));
     v2.setAttribute("color", "blue");
     v3.setAttribute("color", "green");
+    v4.setAttribute("color", "green");
+    
+    v2.setAttribute("color", new Integer(-16724992));
 
     /*
      * Beispiel-Abfrage
@@ -87,11 +90,11 @@ public class GraphHowTo {
      * Der Pfeil ist dabei beim Kopf, die eingef�gte
      * Kante zeigt also vom tail zum head.
      */
-    Edge e1, e2, e3;
+    Edge e1, e2, e3, e4;
     e2 = directedGraph.addEdge(v3, v1); // kante von v1 zu v3
     e1 = directedGraph.addEdge(v2, v1); // kante von v1 zu v2
     e3 = directedGraph.addEdge(v3, v2); // kante von v2 zu v3
-    
+    e4 = directedGraph.addEdge(v4, v3);   
    
     // similar to vertices, edges can also be assigned attributes
     // to store information...
@@ -189,6 +192,9 @@ public class GraphHowTo {
         Vertex[] pathToGoalNode = mSearch.getSolution();
 
         // der gefundene Pfad kann im Graph-Visualizer angezeigt werden
+        
+        System.out.println("geht hier durch");
+        
         for (int i = 0; i < pathToGoalNode.length; i++) {
           pathToGoalNode[i].setAttribute("color", new Integer(-16724992));  // gr�ne Farbe f�r L�sungsknoten
         }
