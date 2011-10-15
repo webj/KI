@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ch.unibe.iam.graph.io.GxlWriter, 2011-10-15 18:28:32 -->
+<!DOCTYPE gxl SYSTEM "gxl1.0.dtd">
+<gxl>
+<graph id="default_id" edgemode="undirected">
+<node id="_0">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>-1</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>468.0</float>
+</attr>
+<attr name="x">
+<float>182.0</float>
+</attr>
+</node>
+<node id="_1">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>-1</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>524.0</float>
+</attr>
+<attr name="x">
+<float>1619.0</float>
+</attr>
+</node>
+<node id="_3">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>-1</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>188.0</float>
+</attr>
+<attr name="x">
+<float>516.0</float>
+</attr>
+</node>
+<node id="_4">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>-1</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>769.0</float>
+</attr>
+<attr name="x">
+<float>600.0</float>
+</attr>
+</node>
+<edge id="_2" from="_1" to="_0">
+<attr name="layer">
+<int>-1</int>
+</attr>
+</edge>
+<edge id="_5" from="_3" to="_0">
+<attr name="layer">
+<int>-1</int>
+</attr>
+</edge>
+<edge id="_6" from="_4" to="_1">
+<attr name="layer">
+<int>-1</int>
+</attr>
+</edge>
+<edge id="_7" from="_4" to="_0">
+<attr name="layer">
+<int>-1</int>
+</attr>
+</edge>
+</graph>
+</gxl>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- ch.unibe.iam.graph.io.GxlWriter, 2011-10-15 11:18:48 -->
+<!-- ch.unibe.iam.graph.io.GxlWriter, 2011-10-15 18:29:43 -->
 <!DOCTYPE gxl SYSTEM "gxl1.0.dtd">
 <gxl>
 <graph id="default_id" edgemode="directed">

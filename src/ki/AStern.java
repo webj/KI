@@ -1,6 +1,8 @@
 package ki;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 import ch.unibe.iam.graph.Graph;
@@ -10,88 +12,121 @@ public class AStern implements GraphSearch {
 	
 	private List<Vertex> open;
 	private List<Vertex> closed;
-	private List<Vertex> unknown;
 	private Vertex n;
+	private List<Node> nodes;
 	private Graph pSearchGraph;
 	private Vertex goal;
+	private Node node;
+	
 	
 	public AStern(){
 		
 		this.open = new ArrayList<Vertex>();
 		this.closed = new ArrayList<Vertex>();
-		this.unknown = new ArrayList<Vertex>();
-		
+		this.node = new Node(null);
+		this.nodes = new ArrayList<Node>();
 	}	
 	
 	@Override
 	public Vertex[] getSolution() {
-		// TODO Auto-generated method stub
-		return null;
+		
+
+		
+		
+		
+		ArrayList<Vertex> solution = new ArrayList<Vertex>();
+		
+		
+		while(node.predecessor!=null){
+			solution.add(node.v);
+			node = node.predecessor;
+		}
+		solution.add(node.v);
+		
+		Vertex vert = solution.remove(solution.size()-1);
+		solution.add(1, vert);
+		Vertex list[] = new Vertex[solution.size()];
+		
+		Vertex[] l = new Vertex[1];
+		l[0] = solution.get(1);
+		
+				
+		return solution.toArray(list);	
+		
 	}
 
 	@Override
-	public void search() {
-		
-		int i=0;
-		
-		//searchs the goal vertex
-		while(!(this.pSearchGraph.getVertex(i).getAttribute("isGoal") != null))			
-			this.goal = this.pSearchGraph.getVertex(i);
-		
-		//finds the start vertex
-		i=0;
-		while(!(this.pSearchGraph.getVertex(i).getAttribute("isStart") != null)){
-			
-			this.n = this.pSearchGraph.getVertex(i);
-			this.open.add(n);
-			i++;			
-		}
+	public void search() {		
 
-			
-		while(!open.isEmpty()){
-			
-			this.n = open.remove(0);
-			closed.add(n);
-			
-			if(n.getAttribute("isGoal")!=null){
-				break;
+		for(Vertex v: this.pSearchGraph.getVerticesArray()){		
+			v.setAttribute("cost", 0f);			
+			if(this.isGoalVertex(v)){
+				this.goal=v;
+			}			
+			if(this.isStartVertex(v)){
+				this.n = v;
+				this.open.add(n);
+				node.v = n;
+				this.n.setAttribute("node", node);
 			}
+		}
+		
+		//set's the h function		
+		for(Vertex v: this.pSearchGraph.getVerticesArray()){
+			v.setAttribute("airline", h(v));
+		}
 			
-			this.pSearchGraph.getEdgesArray();
+		while(!open.isEmpty()){				
+			this.n = open.remove(0);
+			node = (Node)this.n.getAttribute("node");	
 			
-			for(Vertex v: pSearchGraph.getVerticesArray())
-				
-				if(n.hasEdgeTo(v));
-					
+			if(n.equals(goal)){ 
+				break;
+			}	
 			
-			
-		}	
+			expandNode(n);
+			closed.add(n);	
+		}
 		
 
 	}
 	
-	public ArrayList<Vertex> successor(Vertex predecessor){
+	public void expandNode(Vertex currentNode){
 		
-		ArrayList<Vertex> M = new ArrayList<Vertex>();
+		Node n1 = null;
 		
 		for(Vertex v: this.pSearchGraph.getVerticesArray()){
 			
-			if(n.hasEdgeTo(v)){
-				
+			if(currentNode.hasEdgeTo(v)){
+				n1 = new Node(v);
 				if(this.closed.contains(v))
-					continue;
-				
-				float tentative_g = g(v, predecessor) + (Float)predecessor.getAttribute("cost");
+					continue;				
+			
+				Float tentative_g = g(v, currentNode) + (Float)currentNode.getAttribute("cost");
 				
 				if(open.contains(v) && tentative_g >= (Float)v.getAttribute("cost"))
 					continue;
 				
 				
 				
-			}
+				v.setAttribute("cost", tentative_g);				
+				n1.predecessor = this.node;
+				v.setAttribute("node", n1);
 				
+				this.nodes.add(n1);
+					
+				
+				if(!open.contains(v)){				
+					open.add(v);
+
+				}
+				
+				
+			}
 		}
 		
+		this.node = n1;
+		orderOpen();
 	}
 	
 	
@@ -129,6 +164,17 @@ public class AStern implements GraphSearch {
 		return (float) Math.sqrt((Math.pow((xv-xgoal), 2) + Math.pow((yv-ygoal), 2)));
 		
 	}
+	
+	
+	/**
+	 * Sorts the open Array ascending form the shortest to the longest way
+	 */
+	public void orderOpen(){
+		
+		OpenComperator comp = new OpenComperator();		
+		Collections.sort(this.open, comp);
+		
+	}
 
 	@Override
 	public void setSearchGraph(Graph pSearchGraph) {
@@ -136,5 +182,44 @@ public class AStern implements GraphSearch {
 		this.pSearchGraph = pSearchGraph;
 
 	}
+	
+	  private boolean isStartVertex(Vertex pVertex) {
+		    Object curAttrib = pVertex.getAttribute("isStart");
+		    if (curAttrib != null) {
+		      if (curAttrib instanceof Boolean) {
+		        return ((Boolean) curAttrib).booleanValue();
+		      }
+		    }
+		    return false;
+		  }
 
+		  private boolean isGoalVertex(Vertex pVertex) {
+		    Object curAttrib = pVertex.getAttribute("isGoal");
+		    if (curAttrib != null) {
+		      if (curAttrib instanceof Boolean) {
+		        return ((Boolean) curAttrib).booleanValue();
+		      }
+		    }
+		    return false;
+		  }
+
+}
+
+class Node{
+	
+	public Node predecessor;
+	public Vertex v;
+	
+	
+	public Node(Vertex v){
+		this.v = v;
+	}
+	
+	public Node getPredecessor(){
+		return this.predecessor;
+	}
+	
+
+	
+	
 }

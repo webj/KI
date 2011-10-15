@@ -47,11 +47,33 @@ public class GraphHowTo {
     /*
      * Knoten einf�gen...
      */
-    Vertex v1, v2, v3, v4;
-    v1 = directedGraph.addVertex();
-    v2 = directedGraph.addVertex();
-    v3 = directedGraph.addVertex();
-    v4 = directedGraph.addVertex();
+    Vertex v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12, v13, v14, v15, v16, v17, v18, v19, v20, v21, v22, v23;
+    v1 = undirectedGraph.addVertex();
+    v2 = undirectedGraph.addVertex();
+    v3 = undirectedGraph.addVertex();
+    v4 = undirectedGraph.addVertex();
+    v5 = undirectedGraph.addVertex();
+    v6 = undirectedGraph.addVertex();
+    v7 = undirectedGraph.addVertex();
+    v8 = undirectedGraph.addVertex();
+    v9 = undirectedGraph.addVertex();
+    v10 = undirectedGraph.addVertex();
+    v11 = undirectedGraph.addVertex();
+    v12 = undirectedGraph.addVertex();
+    v13 = undirectedGraph.addVertex();
+    v14 = undirectedGraph.addVertex();
+    v15 = undirectedGraph.addVertex();
+    v16 = undirectedGraph.addVertex();
+    v17 = undirectedGraph.addVertex();
+    v18 = undirectedGraph.addVertex();
+    v19 = undirectedGraph.addVertex();
+    v20 = undirectedGraph.addVertex();
+    v21 = undirectedGraph.addVertex();
+    v22 = undirectedGraph.addVertex();
+    v23 = undirectedGraph.addVertex();
+    
+    
+    
     /*
      * Einfache Abfrage der Graphen
      */
@@ -106,8 +128,8 @@ public class GraphHowTo {
     e3.setAttribute("edgeName", "edge from v2 to v3");
 
     // den Graphen anzeigen...
-    visualize(directedGraph);
     
+    visualize(directedGraph);
     /*
      * Graphen k�nnen im Gxl-Format abgespeichert werden....
      */
@@ -141,16 +163,17 @@ public class GraphHowTo {
      * Wie in der Aufgabe angegeben soll der Suchgraph im
      * Gxl-Format eingelesen werden. 
      */
+   
     Graph searchGraph = null;
-    String inputGraphFile = "path to input file";
+    String inputGraphFile = "/home/juerg/workspace/KISerie1/testjuerg.gxl";
     searchGraph = readGraph(inputGraphFile);
-
     /*
      * Nach erfolgreichem einlesen, kann die Suche
      * eigentlich beginnen.
      */
     if (searchGraph != null) {
-
+    
+    	System.out.println("geht hier durch");
       /*
        * hier wird die graphsuche gemacht. die folgenden
        * 3 schritte m�ssen eingehalten werden:
@@ -179,21 +202,24 @@ public class GraphHowTo {
        */
       
       try {
+    	  
+    	
         // euer Algorithmus muss das Interface GraphSearch einhalten
-        GraphSearch mSearch = null;
-      
+        GraphSearch mSearch = new AStern();
         // der zu durchsuchende Graph muss explizit gesetzt werden k�nnen
         mSearch.setSearchGraph(searchGraph);
       
         // die Suche soll per search-Methode gestartet werden
+        
         mSearch.search();
-
+        
         // R�ckgabe des Resultates
         Vertex[] pathToGoalNode = mSearch.getSolution();
+        System.out.println("Anzahl Knoten: "+pathToGoalNode.length);
 
         // der gefundene Pfad kann im Graph-Visualizer angezeigt werden
         
-        System.out.println("geht hier durch");
+ 
         
         for (int i = 0; i < pathToGoalNode.length; i++) {
           pathToGoalNode[i].setAttribute("color", new Integer(-16724992));  // gr�ne Farbe f�r L�sungsknoten
