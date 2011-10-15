@@ -81,6 +81,11 @@ public class AStern implements GraphSearch {
 				if(this.closed.contains(v))
 					continue;
 				
+				float tentative_g = g(v, predecessor) + (Float)predecessor.getAttribute("cost");
+				
+				if(open.contains(v) && tentative_g >= (Float)v.getAttribute("cost"))
+					continue;
+				
 				
 				
 			}
@@ -104,7 +109,7 @@ public class AStern implements GraphSearch {
 		Float xv = (Float) successor.getAttribute("x");
 		Float yv = (Float) successor.getAttribute("y");
 		
-		return (float)((Float) predecessor.getAttribute("cost")+(float) Math.sqrt((Math.pow((xpredecessor - xv), 2) + Math.pow((ypredecessor-yv), 2))));
+		return (float) Math.sqrt((Math.pow((xpredecessor - xv), 2) + Math.pow((ypredecessor-yv), 2)));
 		
 	}
 	/**
