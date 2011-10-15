@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ch.unibe.iam.graph.io.GxlWriter, 2011-10-15 20:21:26 -->
+<!DOCTYPE gxl SYSTEM "gxl1.0.dtd">
+<gxl>
+<graph id="default_id" edgemode="undirected">
+<node id="_0">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="isStart">
+<bool>true</bool>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>13.0</float>
+</attr>
+<attr name="x">
+<float>1.0</float>
+</attr>
+</node>
+<node id="_1">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>12.0</float>
+</attr>
+<attr name="x">
+<float>1.0</float>
+</attr>
+</node>
+<node id="_2">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>112.0</float>
+</attr>
+<attr name="x">
+<float>12.0</float>
+</attr>
+</node>
+<node id="_3">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>11.0</float>
+</attr>
+<attr name="x">
+<float>3.0</float>
+</attr>
+</node>
+<node id="_4">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>11.0</float>
+</attr>
+<attr name="x">
+<float>4.0</float>
+</attr>
+</node>
+<node id="_5">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>9.0</float>
+</attr>
+<attr name="x">
+<float>1.0</float>
+</attr>
+</node>
+<node id="_6">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>8.0</float>
+</attr>
+<attr name="x">
+<float>7.0</float>
+</attr>
+</node>
+<node id="_7">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>8.0</float>
+</attr>
+<attr name="x">
+<float>9.0</float>
+</attr>
+</node>
+<node id="_8">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>8.0</float>
+</attr>
+<attr name="x">
+<float>12.0</float>
+</attr>
+</node>
+<node id="_9">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>6.0</float>
+</attr>
+<attr name="x">
+<float>1.0</float>
+</attr>
+</node>
+<node id="_10">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>7.0</float>
+</attr>
+<attr name="x">
+<float>7.0</float>
+</attr>
+</node>
+<node id="_11">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>7.0</float>
+</attr>
+<attr name="x">
+<float>8.0</float>
+</attr>
+</node>
+<node id="_12">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>5.0</float>
+</attr>
+<attr name="x">
+<float>2.0</float>
+</attr>
+</node>
+<node id="_13">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>5.0</float>
+</attr>
+<attr name="x">
+<float>5.0</float>
+</attr>
+</node>
+<node id="_14">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>5.0</float>
+</attr>
+<attr name="x">
+<float>8.0</float>
+</attr>
+</node>
+<node id="_15">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>5.0</float>
+</attr>
+<attr name="x">
+<float>12.0</float>
+</attr>
+</node>
+<node id="_17">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>3.0</float>
+</attr>
+<attr name="x">
+<float>10.0</float>
+</attr>
+</node>
+<node id="_16">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>3.0</float>
+</attr>
+<attr name="x">
+<float>6.0</float>
+</attr>
+</node>
+<node id="_19">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>2.0</float>
+</attr>
+<attr name="x">
+<float>11.0</float>
+</attr>
+</node>
+<node id="_18">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>2.0</float>
+</attr>
+<attr name="x">
+<float>5.0</float>
+</attr>
+</node>
+<node id="_21">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>0.0</float>
+</attr>
+<attr name="x">
+<float>11.0</float>
+</attr>
+</node>
+<node id="_20">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>0.0</float>
+</attr>
+<attr name="x">
+<float>5.0</float>
+</attr>
+</node>
+<node id="_22">
+<attr name="color">
+<int>-65536</int>
+</attr>
+<attr name="layer">
+<int>0</int>
+</attr>
+<attr name="radius">
+<float>10.0</float>
+</attr>
+<attr name="y">
+<float>0.0</float>
+</attr>
+<attr name="x">
+<float>12.0</float>
+</attr>
+<attr name="isGoal">
+<bool>true</bool>
+</attr>
+</node>
+<edge id="_23" from="_0" to="_1">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_25" from="_1" to="_4">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_24" from="_1" to="_2">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_27" from="_1" to="_5">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_26" from="_1" to="_3">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_29" from="_3" to="_4">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_28" from="_5" to="_3">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_31" from="_2" to="_8">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_30" from="_3" to="_2">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_34" from="_2" to="_4">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_35" from="_4" to="_6">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_32" from="_2" to="_7">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_33" from="_2" to="_10">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_38" from="_6" to="_7">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_39" from="_6" to="_10">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_36" from="_4" to="_7">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_37" from="_4" to="_8">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_42" from="_7" to="_8">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_43" from="_7" to="_11">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_40" from="_6" to="_11">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_41" from="_6" to="_14">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_46" from="_9" to="_20">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_47" from="_10" to="_11">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_44" from="_7" to="_13">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_45" from="_9" to="_12">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_51" from="_10" to="_18">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_50" from="_10" to="_16">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_49" from="_10" to="_13">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_48" from="_10" to="_14">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_55" from="_11" to="_18">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_54" from="_11" to="_16">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_53" from="_11" to="_14">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_52" from="_11" to="_13">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_59" from="_12" to="_20">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_58" from="_12" to="_18">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_57" from="_12" to="_16">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_56" from="_12" to="_13">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_63" from="_13" to="_17">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_62" from="_13" to="_16">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_61" from="_13" to="_14">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_60" from="_12" to="_17">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_68" from="_15" to="_16">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_69" from="_15" to="_17">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_70" from="_15" to="_19">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_71" from="_15" to="_21">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_64" from="_13" to="_18">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_65" from="_14" to="_15">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_66" from="_14" to="_16">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_67" from="_14" to="_17">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_76" from="_18" to="_20">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_77" from="_19" to="_21">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_78" from="_19" to="_22">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_79" from="_21" to="_22">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_72" from="_15" to="_22">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_73" from="_16" to="_17">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_74" from="_16" to="_18">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+<edge id="_75" from="_17" to="_19">
+<attr name="layer">
+<int>0</int>
+</attr>
+</edge>
+</graph>
+</gxl>

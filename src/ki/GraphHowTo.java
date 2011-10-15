@@ -72,64 +72,147 @@ public class GraphHowTo {
     v22 = undirectedGraph.addVertex();
     v23 = undirectedGraph.addVertex();
     
+    Edge e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11, e12, e13, e14, e15, e16, e17, e18, e19, e20, e21, e22, e23, e24, e25, e26, e27, e28, e29, e30, e31, e32, e33, e34, e35, e36, e37, e38, e39, e40, e41, e42, e43, e44, e45, e46, e47, e48, e49, e50, e51, e52, e53, e54, e55, e56, e57;
+    
+    e1 = undirectedGraph.addEdge(v2, v1);
+    e2 = undirectedGraph.addEdge(v3, v2);
+    e3 = undirectedGraph.addEdge(v5, v2);
+    e4 = undirectedGraph.addEdge(v4, v2);
+    e5 = undirectedGraph.addEdge(v6, v2);
+    e6 = undirectedGraph.addEdge(v4, v6);
+    e7 = undirectedGraph.addEdge(v5, v4);
+    e8 = undirectedGraph.addEdge(v3, v4);
+    e9 = undirectedGraph.addEdge(v9, v3);
+    e10 = undirectedGraph.addEdge(v8, v3);
+    e11 = undirectedGraph.addEdge(v11, v3);
+    e12 = undirectedGraph.addEdge(v5, v3);
+    e13 = undirectedGraph.addEdge(v7, v5);
+    e14 = undirectedGraph.addEdge(v8, v5);
+    e15 = undirectedGraph.addEdge(v9, v5);
+    e16 = undirectedGraph.addEdge(v8, v7);
+    e17 = undirectedGraph.addEdge(v11, v7);
+    e18 = undirectedGraph.addEdge(v12, v7);
+    e19 = undirectedGraph.addEdge(v15, v7);
+    e20 = undirectedGraph.addEdge(v9, v8);
+    e21 = undirectedGraph.addEdge(v12, v8);
+    e22 = undirectedGraph.addEdge(v14, v8);
+    e23 = undirectedGraph.addEdge(v13, v10);
+    e24 = undirectedGraph.addEdge(v21, v10);
+    e25 = undirectedGraph.addEdge(v12, v11);
+    e26 = undirectedGraph.addEdge(v15, v11);
+    e27 = undirectedGraph.addEdge(v14, v11);
+    e28 = undirectedGraph.addEdge(v17, v11);
+    e29 = undirectedGraph.addEdge(v19, v11);
+    e30 = undirectedGraph.addEdge(v14, v12);
+    e31 = undirectedGraph.addEdge(v15, v12);
+    e32 = undirectedGraph.addEdge(v17, v12);
+    e33 = undirectedGraph.addEdge(v19, v12);
+    e34 = undirectedGraph.addEdge(v14, v13);
+    e35 = undirectedGraph.addEdge(v17, v13);
+    e36 = undirectedGraph.addEdge(v19, v13);
+    e37 = undirectedGraph.addEdge(v21, v13);
+    e38 = undirectedGraph.addEdge(v18, v13);
+    e39 = undirectedGraph.addEdge(v15, v14);
+    e40 = undirectedGraph.addEdge(v17, v14);
+    e41 = undirectedGraph.addEdge(v18, v14);
+    e42 = undirectedGraph.addEdge(v19, v14);
+    e43 = undirectedGraph.addEdge(v16, v15);
+    e44 = undirectedGraph.addEdge(v17, v15);
+    e45 = undirectedGraph.addEdge(v18, v15);
+    e46 = undirectedGraph.addEdge(v17, v16);
+    e47 = undirectedGraph.addEdge(v18, v16);
+    e48 = undirectedGraph.addEdge(v20, v16);
+    e49 = undirectedGraph.addEdge(v22, v16);
+    e50 = undirectedGraph.addEdge(v23, v16);
+    e51 = undirectedGraph.addEdge(v18, v17);
+    e52 = undirectedGraph.addEdge(v19, v17);
+    e53 = undirectedGraph.addEdge(v20, v18);
+    e54 = undirectedGraph.addEdge(v21, v19);
+    e55 = undirectedGraph.addEdge(v22, v20);
+    e56 = undirectedGraph.addEdge(v23, v20);
+    e57 = undirectedGraph.addEdge(v23, v22);
     
     
-    /*
-     * Einfache Abfrage der Graphen
-     */
-    System.err.println("nr of vertices in graph 1: "
-        + undirectedGraph.sizeVertices());
-    System.err.println("nr of vertices in graph 2: "
-        + directedGraph.sizeVertices());
-
-    /*
-     * Knoten (allg. GraphElements) k�nnen Attribute hinzugef�gt 
-     * werden. Solche Attribute sind generell vom Typ Object. 
-     * Am einfachsten ist es aber, wenn man sich dabei auf String,Double,...
-     * beschr�nkt. (Insbesondere, wenn man I/O verwendet, d.h. die
-     * Graphen als Dateien abspeichert.) Die Attribute werden unter
-     * einem Schl�ssel gespeichert und k�nnen unter diesem Schl�ssel
-     * wieder abgefragt werden.
-     */
-    v1.setAttribute("color", "red");
-    v1.setAttribute("area", new Double(2.0));
-    v2.setAttribute("color", "blue");
-    v3.setAttribute("color", "green");
-    v4.setAttribute("color", "green");
+    int j=1;
+    for(Vertex v: undirectedGraph.getVerticesArray()){
+    	v.setAttribute("vertex", j);
+    	j++;
+    }
     
-    v2.setAttribute("color", new Integer(-16724992));
-
-    /*
-     * Beispiel-Abfrage
-     */
-    System.out.println(v1.getAttribute("color"));
-
-    /*
-     * Analog zu Knoten k�nnen auch Kanten zwischen den
-     * Knoten eingef�gt werden. 
-     * ACHTUNG: 
-     * die Methode lautet mGraph.addEdge(head,tail).
-     * Der Pfeil ist dabei beim Kopf, die eingef�gte
-     * Kante zeigt also vom tail zum head.
-     */
-    Edge e1, e2, e3, e4;
-    e2 = directedGraph.addEdge(v3, v1); // kante von v1 zu v3
-    e1 = directedGraph.addEdge(v2, v1); // kante von v1 zu v2
-    e3 = directedGraph.addEdge(v3, v2); // kante von v2 zu v3
-    e4 = directedGraph.addEdge(v4, v3);   
-   
-    // similar to vertices, edges can also be assigned attributes
-    // to store information...
-    e1.setAttribute("gewicht", new Float(3.0));
-    e2.setAttribute("gewicht", new Float(4.0));
-    e3.setAttribute("gewicht", new Float(2.0));
-    e1.setAttribute("edgeName", "edge from v1 to v2");
-    e2.setAttribute("edgeName", "edge from v1 to v3");
-    e3.setAttribute("edgeName", "edge from v2 to v3");
-
-    // den Graphen anzeigen...
+    v1.setAttribute("isStart", true);
+    v23.setAttribute("isGoal", true);
     
-    visualize(directedGraph);
+    v1.setAttribute("x", 1f);
+    v1.setAttribute("y", 13f);
+    
+    v2.setAttribute("x", 1f);
+    v2.setAttribute("y", 12f);
+
+    v3.setAttribute("x", 12f);
+    v3.setAttribute("y", 112f);
+
+    v4.setAttribute("x", 3f);
+    v4.setAttribute("y", 11f);
+    
+    v5.setAttribute("x", 4f);
+    v5.setAttribute("y", 11f);    
+
+    v6.setAttribute("x", 1f);
+    v6.setAttribute("y", 9f);
+
+    v7.setAttribute("x", 7f);
+    v7.setAttribute("y", 8f);
+
+    v8.setAttribute("x", 9f);
+    v8.setAttribute("y", 8f);
+
+    v9.setAttribute("x", 12f);
+    v9.setAttribute("y", 8f);
+
+    v10.setAttribute("x", 1f);
+    v10.setAttribute("y", 6f);
+
+    v11.setAttribute("x", 7f);
+    v11.setAttribute("y", 7f);
+
+    v12.setAttribute("x", 8f);
+    v12.setAttribute("y", 7f);
+
+    v13.setAttribute("x", 2f);
+    v13.setAttribute("y", 5f);
+
+    v14.setAttribute("x", 5f);
+    v14.setAttribute("y", 5f);
+
+    v15.setAttribute("x", 8f);
+    v15.setAttribute("y", 5f);
+
+    v16.setAttribute("x", 12f);
+    v16.setAttribute("y", 5f);
+
+    v17.setAttribute("x", 6f);
+    v17.setAttribute("y", 3f);
+
+    v18.setAttribute("x", 10f);
+    v18.setAttribute("y", 3f);
+
+    v19.setAttribute("x", 5f);
+    v19.setAttribute("y", 2f);
+
+    v20.setAttribute("x", 11f);
+    v20.setAttribute("y", 2f);
+
+    v21.setAttribute("x", 5f);
+    v21.setAttribute("y", 0f);
+
+    v22.setAttribute("x", 11f);
+    v22.setAttribute("y", 0f);
+
+    v23.setAttribute("x", 12f);
+    v23.setAttribute("y", 0f);
+
+    
+    //visualize(undirectedGraph);
     /*
      * Graphen k�nnen im Gxl-Format abgespeichert werden....
      */
@@ -165,15 +248,15 @@ public class GraphHowTo {
      */
    
     Graph searchGraph = null;
-    String inputGraphFile = "/home/juerg/workspace/KISerie1/testjuerg.gxl";
-    searchGraph = readGraph(inputGraphFile);
+   // String inputGraphFile = "/home/juerg/workspace/KISerie1/Aufgabe3.gxl";
+    //searchGraph = readGraph(inputGraphFile);
     /*
      * Nach erfolgreichem einlesen, kann die Suche
      * eigentlich beginnen.
      */
     if (searchGraph != null) {
     
-    	System.out.println("geht hier durch");
+
       /*
        * hier wird die graphsuche gemacht. die folgenden
        * 3 schritte m�ssen eingehalten werden:

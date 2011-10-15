@@ -57,7 +57,8 @@ public class AStern implements GraphSearch {
 
 	@Override
 	public void search() {		
-
+		System.out.println(this.pSearchGraph.getVerticesArray().length);
+		
 		for(Vertex v: this.pSearchGraph.getVerticesArray()){		
 			v.setAttribute("cost", 0f);			
 			if(this.isGoalVertex(v)){
