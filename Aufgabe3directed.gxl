@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- ch.unibe.iam.graph.io.GxlWriter, 2011-10-15 20:43:07 -->
+<!-- ch.unibe.iam.graph.io.GxlWriter, 2011-10-15 20:54:49 -->
 <!DOCTYPE gxl SYSTEM "gxl1.0.dtd">
 <gxl>
-<graph id="default_id" edgemode="undirected">
+<graph id="default_id" edgemode="directed">
 <node id="_0">
 <attr name="color">
 <int>-65536</int>
 </attr>
 <attr name="isStart">
 <bool>true</bool>
-</attr>
-<attr name="vertex">
-<int>1</int>
 </attr>
 <attr name="layer">
 <int>0</int>
@@ -30,9 +27,6 @@
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>2</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -49,9 +43,6 @@
 <node id="_2">
 <attr name="color">
 <int>-65536</int>
-</attr>
-<attr name="vertex">
-<int>3</int>
 </attr>
 <attr name="layer">
 <int>0</int>
@@ -70,9 +61,6 @@
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>4</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -89,9 +77,6 @@
 <node id="_4">
 <attr name="color">
 <int>-65536</int>
-</attr>
-<attr name="vertex">
-<int>5</int>
 </attr>
 <attr name="layer">
 <int>0</int>
@@ -110,9 +95,6 @@
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>6</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -129,9 +111,6 @@
 <node id="_6">
 <attr name="color">
 <int>-65536</int>
-</attr>
-<attr name="vertex">
-<int>7</int>
 </attr>
 <attr name="layer">
 <int>0</int>
@@ -150,9 +129,6 @@
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>8</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -169,9 +145,6 @@
 <node id="_8">
 <attr name="color">
 <int>-65536</int>
-</attr>
-<attr name="vertex">
-<int>9</int>
 </attr>
 <attr name="layer">
 <int>0</int>
@@ -190,9 +163,6 @@
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>10</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -209,9 +179,6 @@
 <node id="_10">
 <attr name="color">
 <int>-65536</int>
-</attr>
-<attr name="vertex">
-<int>11</int>
 </attr>
 <attr name="layer">
 <int>0</int>
@@ -230,9 +197,6 @@
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>12</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -249,9 +213,6 @@
 <node id="_12">
 <attr name="color">
 <int>-65536</int>
-</attr>
-<attr name="vertex">
-<int>13</int>
 </attr>
 <attr name="layer">
 <int>0</int>
@@ -270,9 +231,6 @@
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>14</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -289,9 +247,6 @@
 <node id="_14">
 <attr name="color">
 <int>-65536</int>
-</attr>
-<attr name="vertex">
-<int>15</int>
 </attr>
 <attr name="layer">
 <int>0</int>
@@ -310,9 +265,6 @@
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>16</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -329,9 +281,6 @@
 <node id="_17">
 <attr name="color">
 <int>-65536</int>
-</attr>
-<attr name="vertex">
-<int>17</int>
 </attr>
 <attr name="layer">
 <int>0</int>
@@ -350,9 +299,6 @@
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>18</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -369,9 +315,6 @@
 <node id="_19">
 <attr name="color">
 <int>-65536</int>
-</attr>
-<attr name="vertex">
-<int>19</int>
 </attr>
 <attr name="layer">
 <int>0</int>
@@ -390,9 +333,6 @@
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>20</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -409,9 +349,6 @@
 <node id="_21">
 <attr name="color">
 <int>-65536</int>
-</attr>
-<attr name="vertex">
-<int>21</int>
 </attr>
 <attr name="layer">
 <int>0</int>
@@ -430,9 +367,6 @@
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>22</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -449,9 +383,6 @@
 <node id="_22">
 <attr name="color">
 <int>-65536</int>
-</attr>
-<attr name="vertex">
-<int>23</int>
 </attr>
 <attr name="layer">
 <int>0</int>

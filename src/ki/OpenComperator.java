@@ -4,6 +4,12 @@ import java.util.Comparator;
 
 import ch.unibe.iam.graph.Vertex;
 
+
+/**
+ * The OpenComperator class compares vertices from the open list.
+ * @author juerg
+ *
+ */
 public class OpenComperator implements Comparator<Vertex> {
 
 	@Override
