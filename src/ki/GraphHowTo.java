@@ -144,7 +144,7 @@ public class GraphHowTo {
 		v2.setAttribute("y", 12f);
 
 		v3.setAttribute("x", 12f);
-		v3.setAttribute("y", 112f);
+		v3.setAttribute("y", 12f);
 
 		v4.setAttribute("x", 3f);
 		v4.setAttribute("y", 11f);

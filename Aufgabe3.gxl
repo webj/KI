@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- ch.unibe.iam.graph.io.GxlWriter, 2011-10-15 20:43:07 -->
+<!-- ch.unibe.iam.graph.io.GxlWriter, 2011-10-18 21:51:26 -->
 <!DOCTYPE gxl SYSTEM "gxl1.0.dtd">
 <gxl>
-<graph id="default_id" edgemode="undirected">
+<graph id="default_id" edgemode="directed">
 <node id="_0">
 <attr name="color">
 <int>-65536</int>
@@ -10,9 +10,6 @@
 <attr name="isStart">
 <bool>true</bool>
 </attr>
-<attr name="vertex">
-<int>1</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -20,19 +17,16 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>13.0</float>
+<float>168.0</float>
 </attr>
 <attr name="x">
-<float>1.0</float>
+<float>160.26735</float>
 </attr>
 </node>
 <node id="_1">
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>2</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -40,19 +34,16 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>12.0</float>
+<float>123.78828</float>
 </attr>
 <attr name="x">
-<float>1.0</float>
+<float>65.997284</float>
 </attr>
 </node>
 <node id="_2">
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>3</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -60,19 +51,16 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>112.0</float>
+<float>88.14079</float>
 </attr>
 <attr name="x">
-<float>12.0</float>
+<float>137.75089</float>
 </attr>
 </node>
 <node id="_3">
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>4</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -80,19 +68,16 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>11.0</float>
+<float>46.948574</float>
 </attr>
 <attr name="x">
-<float>3.0</float>
+<float>27.579346</float>
 </attr>
 </node>
 <node id="_4">
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>5</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -100,19 +85,16 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>11.0</float>
+<float>0.0</float>
 </attr>
 <attr name="x">
-<float>4.0</float>
+<float>103.42576</float>
 </attr>
 </node>
 <node id="_5">
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>6</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -120,19 +102,16 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>9.0</float>
+<float>47.837967</float>
 </attr>
 <attr name="x">
-<float>1.0</float>
+<float>132.62837</float>
 </attr>
 </node>
 <node id="_6">
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>7</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -140,19 +119,16 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>8.0</float>
+<float>98.51581</float>
 </attr>
 <attr name="x">
-<float>7.0</float>
+<float>126.59483</float>
 </attr>
 </node>
 <node id="_7">
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>8</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -160,19 +136,16 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>8.0</float>
+<float>41.240356</float>
 </attr>
 <attr name="x">
-<float>9.0</float>
+<float>45.387436</float>
 </attr>
 </node>
 <node id="_8">
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>9</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -180,19 +153,16 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>8.0</float>
+<float>8.563134</float>
 </attr>
 <attr name="x">
-<float>12.0</float>
+<float>177.85982</float>
 </attr>
 </node>
 <node id="_9">
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>10</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -200,19 +170,16 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>6.0</float>
+<float>168.0</float>
 </attr>
 <attr name="x">
-<float>1.0</float>
+<float>118.523094</float>
 </attr>
 </node>
 <node id="_10">
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>11</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -220,19 +187,16 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>7.0</float>
+<float>98.15111</float>
 </attr>
 <attr name="x">
-<float>7.0</float>
+<float>37.642952</float>
 </attr>
 </node>
 <node id="_11">
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>12</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -240,19 +204,16 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>7.0</float>
+<float>14.349753</float>
 </attr>
 <attr name="x">
-<float>8.0</float>
+<float>135.33762</float>
 </attr>
 </node>
 <node id="_12">
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>13</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -260,19 +221,16 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>5.0</float>
+<float>107.98669</float>
 </attr>
 <attr name="x">
-<float>2.0</float>
+<float>39.701656</float>
 </attr>
 </node>
 <node id="_13">
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>14</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -280,19 +238,16 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>5.0</float>
+<float>99.183784</float>
 </attr>
 <attr name="x">
-<float>5.0</float>
+<float>116.38686</float>
 </attr>
 </node>
 <node id="_14">
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>15</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -300,19 +255,16 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>5.0</float>
+<float>0.0</float>
 </attr>
 <attr name="x">
-<float>8.0</float>
+<float>52.51067</float>
 </attr>
 </node>
 <node id="_15">
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>16</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -320,19 +272,16 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>5.0</float>
+<float>101.28284</float>
 </attr>
 <attr name="x">
-<float>12.0</float>
+<float>77.55385</float>
 </attr>
 </node>
 <node id="_17">
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>17</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -340,19 +289,16 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>3.0</float>
+<float>20.3755</float>
 </attr>
 <attr name="x">
-<float>10.0</float>
+<float>113.4662</float>
 </attr>
 </node>
 <node id="_16">
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>18</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -360,19 +306,16 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>3.0</float>
+<float>36.658154</float>
 </attr>
 <attr name="x">
-<float>6.0</float>
+<float>0.0</float>
 </attr>
 </node>
 <node id="_19">
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>19</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -380,19 +323,16 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>2.0</float>
+<float>77.36055</float>
 </attr>
 <attr name="x">
-<float>11.0</float>
+<float>6.06251</float>
 </attr>
 </node>
 <node id="_18">
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>20</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -400,19 +340,16 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>2.0</float>
+<float>0.0</float>
 </attr>
 <attr name="x">
-<float>5.0</float>
+<float>64.90809</float>
 </attr>
 </node>
 <node id="_21">
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>21</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -423,16 +360,13 @@
 <float>0.0</float>
 </attr>
 <attr name="x">
-<float>11.0</float>
+<float>0.044189073</float>
 </attr>
 </node>
 <node id="_20">
 <attr name="color">
 <int>-65536</int>
 </attr>
-<attr name="vertex">
-<int>22</int>
-</attr>
 <attr name="layer">
 <int>0</int>
 </attr>
@@ -440,18 +374,15 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>0.0</float>
+<float>70.00668</float>
 </attr>
 <attr name="x">
-<float>5.0</float>
+<float>137.92128</float>
 </attr>
 </node>
 <node id="_22">
 <attr name="color">
 <int>-65536</int>
-</attr>
-<attr name="vertex">
-<int>23</int>
 </attr>
 <attr name="layer">
 <int>0</int>
@@ -463,10 +394,10 @@
 <float>10.0</float>
 </attr>
 <attr name="y">
-<float>0.0</float>
+<float>4.367492</float>
 </attr>
 <attr name="x">
-<float>12.0</float>
+<float>89.19975</float>
 </attr>
 </node>
 <edge id="_23" from="_0" to="_1">
